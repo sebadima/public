@@ -1,0 +1,22 @@
+# JustPaste Storage & Data
+# Esclude la cartella di storage definita nel codice [cite: 1, 13]
+justpaste/
+.autosave.json
+.autosave.tmp
+
+# Python environment
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# PDF & Temp files
+# Pulisce eventuali rimasugli di stampa o file temporanei [cite: 2, 9]
+*.pdf
+tmp_*
+
+# OS metadata
+.DS_Store
+Thumbs.db
