@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #0f0;
+    font-family: monospace;
+    font-size: 17px;          /* base leggermente più grande */
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #1a1a1a;
+    border-bottom: 2px solid #333;
+}
+
+.header {
+    display: flex;
+    height: 50px;             /* un filo più alta per comodità */
+    align-items: center;
+    padding: 8px 12px;
+    gap: 20px;
+}
+
+#filename {
+    background: #000;
+    color: #0f0;
+    border: 1px solid #444;
+    padding: 6px 10px;
+    flex-grow: 1;
+    font-size: 18px !important;  /* più leggibile */
+}
+
+#status {
+    min-width: 200px;
+    font-size: 15px;
+    text-align: right;
+    font-weight: bold;
+}
+
+#editor {
+    width: 100%;
+    min-height: 80vh;
+    padding: 24px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 22px !important;      /* qui lo ingrandiamo davvero */
+    line-height: 1.55;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+#editor * {
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+#editor::selection,
+#editor *::selection {
+    background: #0f0;
+    color: #000;
+}
+
+.bar {
+    display: flex;
+    height: 40px;
+    background: #222;
+    align-items: center;
+}
+
+button {
+    flex: 1;
+    background: none;
+    color: #0f0;
+    border: 1px solid #333;
+    font-weight: bold;
+    font-size: 16px !important;
+    padding: 6px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #0f0;
+    color: #000;
+}
