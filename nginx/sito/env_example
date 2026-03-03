@@ -1,0 +1,6 @@
+DOMAIN=www.dominio.it
+EMAIL=info@dominio.it
+
+CONTAINER_NAME=dominio-sito
+NETWORK=nginx-proxy
+
